@@ -197,7 +197,7 @@ class TreapVisualizer:
         self.draw_tree()
 
     def show_rotation_message(self, rotation, nodes_involved):
-        self.message_label.config(text=f"Rotation: {rotation} | Nodes involved: {', '.join(str(n.key) for n in nodes_involved)}")
+        self.message_label.config(text=f"{rotation} | Nodes: {', '.join(str(n.key) for n in nodes_involved)}")
         self.master.after(500, self.clear_message)
         self.master.after(7000, lambda: self.message_label.config(text=""))
 
