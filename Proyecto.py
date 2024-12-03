@@ -13,23 +13,6 @@ class Node:
         self.x = 0  # Coordenada x (se asignará en el dibujo)
         self.y = 0  # Coordenada y (se asignará en el dibujo)
 
-
-# Clase Treap
-import tkinter as tk
-import random
-import time
-from tkinter import messagebox
-
-# Clase Nodo
-class Node:
-    def __init__(self, key):
-        self.key = key
-        self.priority = random.randint(1, 100)  # Prioridad aleatoria
-        self.left = None
-        self.right = None
-        self.x = 0  # Coordenada x (se asignará en el dibujo)
-        self.y = 0  # Coordenada y (se asignará en el dibujo)
-
 # Clase Treap
 class Treap:
     def rotate_right(self, y, visualizer):
